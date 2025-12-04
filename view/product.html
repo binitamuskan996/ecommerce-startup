@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Product</title>
 </head>
 <body>
-    <h1>Fetching All products</h1>
+    <h1>Add a Product</h1>
+
+    <form action="/api/products" method="GET">
+        <label for="product">Product Name</label>
+        <input type="text" id="product" name="productName">
+        <button type="submit">Add Product</button>
+    </form>
+
 </body>
 </html>
