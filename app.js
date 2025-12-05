@@ -7,6 +7,8 @@ const cartRoutes = require("./routes/cartRoutes");
 
 app.use(express.json());
 
+app.use(express.static('public'))
+
 app.use("/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/cart", cartRoutes);
